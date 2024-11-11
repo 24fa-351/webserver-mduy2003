@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include <pthread.h>
 
-#include "echo.h"
+#include "server.h"
 
 #define DEFAULT_PORT 50001
 #define LISTEN_BACKLOG 5
