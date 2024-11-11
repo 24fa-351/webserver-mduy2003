@@ -22,10 +22,10 @@ void handle_calc(int client_fd, const char *query)
 {
 }
 
-void *handleConnection(void *a_client)
+void *handle_connection(void *client)
 {
-    int client_fd = *((int *)a_client);
-    free(a_client);
+    int client_fd = *((int *)client);
+    free(client);
 
     char buffer[BUFFER_SIZE];
     int bytes_read = read(client_fd, buffer, sizeof(buffer) - 1);
